@@ -7,5 +7,7 @@ mongoose.connect(process.env.DB_URI,
         if(response){
             console.log('Database connected')
         }
+}).catch(err=>{
+    console.log(err)
 })
 export default mongoose
